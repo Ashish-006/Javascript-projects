@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: #fff;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: hsl(209, 65%, 31%);
+}
+.wrapper{
+    background-color: hsl(209, 61%, 16%);
+    width: 350px;
+    height: 450px;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+  #topContainer {
+    margin-top: 3rem;
+  }
+  
+  .container {
+    margin-top: 3rem;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+  
+  .inputContainer {
+    background: hsl(209, 60%, 9%);
+    border-radius: 1.4rem;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #billTotalInput,
+  #tipInput {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 4px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .splitButton {
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background: hsl(209, 60%, 9%);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+
+  }
+  
+  .buttonText {
+    color: #fff !important;
+    font-size: 1rem;
+  }
+  
+  .splitAmount {
+    font-size: 1.6rem;
+    margin: 0.8rem;
+  }
+  
+  #bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .totalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .total {
+    font-size: 2rem;
+  }
+  
