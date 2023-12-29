@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #8797AF;
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.container {
+	background-color: #364156;
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	width: 350px;
+    border-radius: 6px;
+	max-width: 100%;
+}
+
+.result-container {
+	background-color: #212D40;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+    border-radius: 6px;
+	height: 50px;
+	width: 100%;
+}
+
+.result-container #result {
+  	word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+#clipboard{
+    background: transparent;
+}
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+    border-radius: 6px;
+	background-color: #212D40;
+}
+
+.btn-large {
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
+
+.value-container{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+#demo{
+	color: #fff;
+    font-size: 1rem;
+    font-family: 'Oswald' , sans-serif;
+}
+
+.slider{
+	width: 80px;
+}
+
+.slider::-webkit-slider-thumb{
+    cursor: pointer;
+}
+
+/* custom checkbox */
+.setting .ikxBAC {
+	appearance: none;
+	background-color: #c9cbcd;
+	border-radius: 72px;
+	border-style: none;
+	flex-shrink: 0;
+	height: 20px;
+	margin: 0;
+	position: relative;
+	width: 30px;
+  }
+
+  .setting .ikxBAC::before {
+	bottom: -6px;
+	content: "";
+	left: -6px;
+	position: absolute;
+	right: -6px;
+	top: -6px;
+  }
+
+  .setting .ikxBAC,
+  .setting .ikxBAC::after {
+	transition: all 100ms ease-out;
+  }
+
+  .setting .ikxBAC::after {
+	background-color: #fff;
+	border-radius: 50%;
+	content: "";
+	height: 14px;
+	left: 3px;
+	position: absolute;
+	top: 3px;
+	width: 14px;
+  }
+
+  .setting input[type=checkbox] {
+	cursor: pointer;
+  }
+
+  .setting .ikxBAC:checked {
+	background-color: #212D40;
+  }
+
+  .setting .ikxBAC:checked::after {
+	background-color: #fff;
+	left: 13px;
+  }
+
+  .setting :focus:not(.focus-visible) {
+	outline: 0;
+  }
+
+  .setting .ikxBAC:checked:hover {
+	background-color: #212D40;
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class='bx bx-copy'></i>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Length</label>
+                <div class="value-container">
+                    <span id="demo">4</span>
+                <input type="range" id="length" class="slider" min="4" max="22" value="4">
+            </div>
+            </div>
+            <div class="setting">
+                <label>Uppercase letters</label>
+                <input type="checkbox" class="ikxBAC" id="uppercase"  />
+            </div>
+            <div class="setting">
+                <label>Lowercase letters</label>
+                <input type="checkbox"  class="ikxBAC" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Numbers</label>
+                <input type="checkbox" class="ikxBAC" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Special characters</label>
+                <input type="checkbox" class="ikxBAC" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Generate
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
