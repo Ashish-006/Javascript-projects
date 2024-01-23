@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container h1 span{
+  color: #ff2963;
+  text-decoration: underline;
+}
+
+.container textarea{
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #403d84;
+    width: 600px;
+    height: 250px;
+    resize: none;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+textarea::placeholder{
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 36px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img{
+    width: 14px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    height: 45px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 36px;
+    appearance: none;
+    background: url(images/dropdown.png) no-repeat right 0.8em center / 1.4em,#403d84;
+    cursor: pointer;
+}
